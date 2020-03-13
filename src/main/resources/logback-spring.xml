@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- 获取 application.yml 中的配置-->
+    <springProperty scope="context" name="BIZ_LOG_PATH" source="biz-logging.path"/>
+
+    <!-- 日志格式及保存时间 -->
+    <property name="MAX_HISTORY" value="7"/>
+    <property name="LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [tracerId:%X{X-B3-TraceId:-}] [%thread] %-5level %logger{50}:%L - %msg%n"/>
+
+    <!--web信息-->
+    <logger name="org.springframework.web" level="info"/>
+
+
+    <appender name="CONSOLE_APPENDER" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- ［默认］打印sql语句的appender(最好只在开发和测试环境) -->
+    <appender name="sqlFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${BIZ_LOG_PATH}/sql.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${BIZ_LOG_PATH}/sql.log.%d{yyyy-MM-dd}</fileNamePattern>
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>${LOG_PATTERN}</Pattern>
+        </layout>
+    </appender>
+    <logger name="jdbc.sqltiming" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE_APPENDER"/>
+        <appender-ref ref="sqlFileAppender"/>
+    </logger>
+    <logger name="jdbc.resultsettable" level="OFF"/>
+    <logger name="jdbc.sqlonly" level="OFF"/>
+    <logger name="jdbc.audit" level="OFF"/>
+    <logger name="jdbc.resultset" level="OFF"/>
+    <logger name="jdbc.connection" level="OFF"/>
+
+    <!-- 日志文件的appender -->
+    <appender name="FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${BIZ_LOG_PATH}/global-default.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${BIZ_LOG_PATH}/global-default.log.%d{yyyy-MM-dd}</fileNamePattern>
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>${LOG_PATTERN}</Pattern>
+        </layout>
+    </appender>
+
+    <!-- 应该被每个业务logger使用 错误日志文件的appender -->
+    <appender name="ERROR_FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${BIZ_LOG_PATH}/global-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${BIZ_LOG_PATH}/global-error.log.%d{yyyy-MM-dd}</fileNamePattern>
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>${LOG_PATTERN}</Pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE_APPENDER"/>
+        <appender-ref ref="FILE_APPENDER"/>
+        <appender-ref ref="ERROR_FILE_APPENDER"/>
+    </root>
+
+
+</configuration>

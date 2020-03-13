@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -47,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -134,7 +145,7 @@
       <workItem from="1583981007758" duration="9242000" />
       <workItem from="1583999890273" duration="9124000" />
       <workItem from="1584064809331" duration="5364000" />
-      <workItem from="1584090184593" duration="421000" />
+      <workItem from="1584090184593" duration="1572000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用的信息。">
       <created>1584090301794</created>
@@ -143,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584090301794</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="更新readme">
+      <created>1584090636366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584090636366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,21 +169,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除无用的信息。" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除无用的信息。" />
+    <MESSAGE value="更新readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="663" y="184" key="#Application" timestamp="1583991976665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="663" y="184" key="#Application/0.0.1920.1040@0.0.1920.1040" timestamp="1583991976665" />
+    <state x="552" y="181" key="#Notifications" timestamp="1584090814685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1584090814685" />
     <state x="552" y="181" key="#Project_Structure" timestamp="1584090263255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1584090263255" />
-    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584090298841">
+    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584090634544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090298841" />
+    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090634544" />
     <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1583991667610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -226,10 +249,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583992406077" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1584090305149">
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584090828288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090305149" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090828288" />
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584064809325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
