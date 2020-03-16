@@ -1,4 +1,4 @@
-package com.iot.config;
+package com.iot.config.rabbitmq;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

@@ -1,4 +1,4 @@
-package com.iot.config;
+package com.iot.config.rabbitmq;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

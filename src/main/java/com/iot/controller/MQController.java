@@ -1,8 +1,8 @@
 package com.iot.controller;
 
 import com.iot.common.Result;
-import com.iot.config.ApiCoreSender;
-import com.iot.config.ApiPaymentSender;
+import com.iot.config.rabbitmq.ApiCoreSender;
+import com.iot.config.rabbitmq.ApiPaymentSender;
 import com.iot.vo.LogInfoVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

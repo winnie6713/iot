@@ -1,4 +1,4 @@
-package com.iot.config;
+package com.iot.config.rabbitmq;
 
 import com.iot.vo.LogInfoVo;
 import lombok.extern.slf4j.Slf4j;
