@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,9 @@
     <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
   </component>
   <component name="ProjectId" id="1VMkjbh1pxYEie4glumLUASI5F4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -58,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,8 +76,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\iot\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\iot\src\main\resources" />
+      <recent name="E:\projects\iot\src" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
@@ -145,7 +156,7 @@
       <workItem from="1583981007758" duration="9242000" />
       <workItem from="1583999890273" duration="9124000" />
       <workItem from="1584064809331" duration="5364000" />
-      <workItem from="1584090184593" duration="1572000" />
+      <workItem from="1584090184593" duration="2369000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用的信息。">
       <created>1584090301794</created>
@@ -161,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584090636366</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加日志配置文件。">
+      <created>1584091903654</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584091903654</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +188,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除无用的信息。" />
     <MESSAGE value="更新readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新readme" />
+    <MESSAGE value="添加日志配置文件。" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加日志配置文件。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="663" y="184" key="#Application" timestamp="1583991976665">
@@ -185,10 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1584090263255" />
-    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584090634544">
+    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584091901779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090634544" />
+    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584091901779" />
     <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1583991667610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -249,10 +268,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583992406077" />
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584090828288">
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584091906100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090828288" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584091906100" />
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584064809325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
