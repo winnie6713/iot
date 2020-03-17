@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +204,7 @@
       <workItem from="1583981007758" duration="9242000" />
       <workItem from="1583999890273" duration="9124000" />
       <workItem from="1584064809331" duration="5364000" />
-      <workItem from="1584090184593" duration="27509000" />
+      <workItem from="1584090184593" duration="27855000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用的信息。">
       <created>1584090301794</created>
@@ -245,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584327674501</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加mybatis-generator的配置，并添加lombok plugin的class插件。">
+      <created>1584426345355</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584426345355</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +259,8 @@
     <MESSAGE value="更新readme" />
     <MESSAGE value="添加日志配置文件。" />
     <MESSAGE value="添加mybatis-plus配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis-plus配置" />
+    <MESSAGE value="添加mybatis-generator的配置，并添加lombok plugin的class插件。" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis-generator的配置，并添加lombok plugin的class插件。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="663" y="184" key="#Application" timestamp="1583991976665">
@@ -287,10 +291,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584417067179" />
-    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584327667216">
+    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584426340237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584327667216" />
+    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584426340237" />
     <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1584417080804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -351,10 +355,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="896" y="202" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584408713620" />
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584328280774">
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584426349153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584328280774" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584426349153" />
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584064809325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
