@@ -1,4 +1,4 @@
-package com.iot.db;
+package com.iot.config.influxdb;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

@@ -2,7 +2,7 @@ package com.iot.config.rabbitmq;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.iot.db.InfluxDBConnect;
+import com.iot.config.influxdb.InfluxDBConnect;
 import com.iot.vo.LogInfoVo;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

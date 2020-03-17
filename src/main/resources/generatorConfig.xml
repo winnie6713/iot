@@ -9,7 +9,7 @@
     <!-- 配置文件路径
     <properties url="${mybatis.generator.generatorConfig.properties}"/>-->
     <!--数据库驱动包路径 -->
-    <!--<classPathEntry location="D:\apache-maven-3.5.3\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>-->
+<!--    <classPathEntry location="D:\devtool\apache-maven-3.5.0\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>-->
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
 
@@ -24,9 +24,9 @@
 
         <!--数据库连接信息 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://rm-bp11251hf4380ls540o.mysql.rds.aliyuncs.com:3306/snowflame-account?characterEncoding=utf8&amp;useSSL=true&amp;tinyInt1isBit=false"
-                        userId="bigdatasnowflame"
-                        password="pEwziI3Emztdqv8u">
+                        connectionURL="jdbc:mysql://120.24.188.42:3306/test_iot?characterEncoding=utf8&amp;serverTimezone=UTC&amp;useSSL=false"
+                        userId="root"
+                        password="zkds503">
         </jdbcConnection>
 
         <!-- java类型解析器 可选配置 -->
@@ -35,7 +35,7 @@
         </javaTypeResolver>
 
         <!--生成的model 包路径 -->
-        <javaModelGenerator targetPackage="com.miya.bigdata.dal.entity"
+        <javaModelGenerator targetPackage="com.iot.entity"
                             targetProject="src/main/java">
             <property name="enableSubPackages" value="ture"/>
             <property name="trimStrings" value="true"/>
@@ -47,7 +47,7 @@
         </sqlMapGenerator>
 
         <!-- 生成的Dao接口 的包路径 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.miya.bigdata.dal.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.iot.mapper"
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="ture"/>
         </javaClientGenerator>
@@ -69,12 +69,12 @@
 
 
         <!--对应数据库表名，多个表，请复制指定，不需要的方法请关闭开关 -->
-        <table tableName="info_area" domainObjectName="InfoAreaDO" enableInsert="true"
+        <table tableName="log_info" domainObjectName="LogInfoDo" enableInsert="true"
                enableSelectByPrimaryKey="true"
-               enableSelectByExample="true" enableUpdateByPrimaryKey="true"
+               enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true"
-               enableDeleteByExample="true" enableCountByExample="true"
-               enableUpdateByExample="true">
+               enableDeleteByExample="false" enableCountByExample="false"
+               enableUpdateByExample="false">
             <!-- 使用分布式主键生成工具(如：snowflake等)生成主键时，注释下面这行 -->
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>

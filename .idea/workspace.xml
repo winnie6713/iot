@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/db/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/db/MybatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/ApiCoreSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/ApiCoreSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/ApiPaymentReceive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/ApiPaymentReceive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/ApiPaymentSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/ApiPaymentSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/RabbitMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/RabbitMqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/controller/MQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/controller/MQController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/project/mes-sl" />
+    <property name="last_opened_file_path" value="E:/project/generator-demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -97,10 +92,23 @@
       <recent name="E:\projects\iot\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Maven.mybatis_generator">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.iot.Application" />
       <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.iot.CodeGenerator" />
+      <module name="iot" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.iot.*" />
@@ -124,6 +132,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mybatis_generator" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="iot_demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.iot.Application" />
@@ -131,8 +165,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Application.InstallCert" />
+      <item itemvalue="Maven.mybatis_generator" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.InstallCert" />
       </list>
@@ -166,7 +208,7 @@
       <workItem from="1583981007758" duration="9242000" />
       <workItem from="1583999890273" duration="9124000" />
       <workItem from="1584064809331" duration="5364000" />
-      <workItem from="1584090184593" duration="4689000" />
+      <workItem from="1584090184593" duration="27509000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用的信息。">
       <created>1584090301794</created>
@@ -196,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584322620896</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加mybatis-plus配置">
+      <created>1584327674501</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584327674501</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +255,8 @@
     <MESSAGE value="删除无用的信息。" />
     <MESSAGE value="更新readme" />
     <MESSAGE value="添加日志配置文件。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加日志配置文件。" />
+    <MESSAGE value="添加mybatis-plus配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis-plus配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="663" y="184" key="#Application" timestamp="1583991976665">
@@ -221,30 +271,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1584090263255" />
-    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584322618832">
+    <state x="276" y="251" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584410865049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584322618832" />
-    <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1584326580471">
+    <state x="276" y="251" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584410865049" />
+    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser" timestamp="1584348777846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="761" y="342" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584326580471" />
-    <state width="1921" height="289" key="GridCell.Tab.0.bottom" timestamp="1584323151386">
+    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584348777846" />
+    <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584426277673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584323151386" />
-    <state width="1921" height="289" key="GridCell.Tab.0.center" timestamp="1584323151386">
+    <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584426277673" />
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584417067179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584323151386" />
-    <state width="1921" height="289" key="GridCell.Tab.0.left" timestamp="1584323151386">
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584417067179" />
+    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584327667216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584323151386" />
-    <state width="1921" height="289" key="GridCell.Tab.0.right" timestamp="1584323151386">
+    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584327667216" />
+    <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1584417080804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584323151386" />
+    <state x="761" y="342" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584417080804" />
+    <state width="1921" height="249" key="GridCell.Tab.0.bottom" timestamp="1584425930976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584425930976" />
+    <state width="1921" height="249" key="GridCell.Tab.0.center" timestamp="1584425930975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="249" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584425930975" />
+    <state width="1921" height="249" key="GridCell.Tab.0.left" timestamp="1584425930975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="249" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584425930975" />
+    <state width="1921" height="249" key="GridCell.Tab.0.right" timestamp="1584425930976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="249" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584425930975" />
     <state width="1921" height="165" key="GridCell.Tab.1.bottom" timestamp="1584084357794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,22 +343,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="165" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584084357794" />
-    <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1583991874031">
+    <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1584417013898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583991874031" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1583992406077">
+    <state x="490" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584417013898" />
+    <state x="896" y="202" key="SettingsEditor" timestamp="1584408713620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583992406077" />
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584322623134">
+    <state x="896" y="202" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584408713620" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584328280774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584322623134" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584328280774" />
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584064809325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584064809325" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584408565370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584408565370" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

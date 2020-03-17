@@ -10,6 +10,14 @@ spring:
     username: admin
     password: admin
 
+  jackson:
+    time-zone: GMT+8 #时区
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.24.188.42:3306/test_iot?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: zkds503
 
   influx:
     #端口在/etc/influxdb/influxdb.conf的[http]中配置
@@ -18,3 +26,18 @@ spring:
     user: admin
     password: admin
     database: test_iot
+
+# mybatis_config
+mybatis-plus:
+  mapper-locations: classpath*:mapping/*Mapper.xml
+  type-aliases-package: com.iot.entity
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true
+  global-config:
+    id-type: 2   #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+    field-strategy: 2   #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+    db-column-underline: true  #驼峰下划线转换
+    refresh-mapper: true    #刷新mapper 调试神器
+    capital-mode: true    #数据库大写下划线转换
+    logic-delete-value: 0  #逻辑删除配置
