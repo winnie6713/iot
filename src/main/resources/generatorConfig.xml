@@ -69,7 +69,7 @@
 
 
         <!--对应数据库表名，多个表，请复制指定，不需要的方法请关闭开关 -->
-        <table tableName="log_info" domainObjectName="LogInfoDo" enableInsert="true"
+        <table tableName="log_info" domainObjectName="LogInfo" enableInsert="true"
                enableSelectByPrimaryKey="true"
                enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true"

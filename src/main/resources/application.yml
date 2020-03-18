@@ -15,7 +15,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.24.188.42:3306/test_iot?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://120.24.188.42:3306/test_iot?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false
     username: root
     password: zkds503
 
