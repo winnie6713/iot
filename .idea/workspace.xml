@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/V1.00__iot.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/iot/test/TestGeneratorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/db/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/db/MybatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfoDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/mapper/LogInfoDoMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LogInfoDoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/mapper/LogInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LogInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LogInfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +138,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGeneratorCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="iot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iot.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iot.test" />
+      <option name="MAIN_CLASS_NAME" value="com.iot.test.TestGeneratorCode" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGeneratorCode.testGen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="iot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iot.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iot.test" />
+      <option name="MAIN_CLASS_NAME" value="com.iot.test.TestGeneratorCode" />
+      <option name="METHOD_NAME" value="testGen" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="mybatis_generator" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -177,9 +208,13 @@
       <item itemvalue="Application.InstallCert" />
       <item itemvalue="Maven.mybatis_generator" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.TestGeneratorCode.testGen" />
+      <item itemvalue="JUnit.TestGeneratorCode" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestGeneratorCode" />
+        <item itemvalue="JUnit.TestGeneratorCode.testGen" />
         <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.InstallCert" />
       </list>
@@ -214,6 +249,8 @@
       <workItem from="1583999890273" duration="9124000" />
       <workItem from="1584064809331" duration="5364000" />
       <workItem from="1584090184593" duration="38975000" />
+      <workItem from="1584514159807" duration="3177000" />
+      <workItem from="1584581954028" duration="11082000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用的信息。">
       <created>1584090301794</created>
@@ -264,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584426590212</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加mybatis-generator的配置，并添加lombok plugin的class插件。">
+      <created>1584514223371</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584514223371</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,58 +339,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="276" y="251" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584410865049" />
-    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser" timestamp="1584434397616">
+    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser" timestamp="1584588016173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584434397616" />
+    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584588016173" />
     <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584426277673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584426277673" />
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584435501154">
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584586694405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584435501154" />
-    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584511896969">
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584586694405" />
+    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584514219933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584511896969" />
+    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584514219933" />
     <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1584417080804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="342" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584417080804" />
-    <state width="1921" height="256" key="GridCell.Tab.0.bottom" timestamp="1584511998153">
+    <state width="1921" height="256" key="GridCell.Tab.0.bottom" timestamp="1584600127002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998153" />
-    <state width="1921" height="256" key="GridCell.Tab.0.center" timestamp="1584511998153">
+    <state width="1921" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127002" />
+    <state width="1921" height="256" key="GridCell.Tab.0.center" timestamp="1584600127001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998153" />
-    <state width="1921" height="256" key="GridCell.Tab.0.left" timestamp="1584511998153">
+    <state width="1921" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127001" />
+    <state width="1921" height="256" key="GridCell.Tab.0.left" timestamp="1584600127001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998153" />
-    <state width="1921" height="256" key="GridCell.Tab.0.right" timestamp="1584511998153">
+    <state width="1921" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127001" />
+    <state width="1921" height="256" key="GridCell.Tab.0.right" timestamp="1584600127002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998153" />
-    <state width="1921" height="256" key="GridCell.Tab.1.bottom" timestamp="1584511998154">
+    <state width="1921" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127002" />
+    <state width="1921" height="256" key="GridCell.Tab.1.bottom" timestamp="1584600126811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998154" />
-    <state width="1921" height="256" key="GridCell.Tab.1.center" timestamp="1584511998153">
+    <state width="1921" height="256" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
+    <state width="1921" height="256" key="GridCell.Tab.1.center" timestamp="1584600126811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998153" />
-    <state width="1921" height="256" key="GridCell.Tab.1.left" timestamp="1584511998153">
+    <state width="1921" height="256" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
+    <state width="1921" height="256" key="GridCell.Tab.1.left" timestamp="1584600126811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998153" />
-    <state width="1921" height="256" key="GridCell.Tab.1.right" timestamp="1584511998154">
+    <state width="1921" height="256" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
+    <state width="1921" height="256" key="GridCell.Tab.1.right" timestamp="1584600126811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584511998154" />
+    <state width="1921" height="256" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
     <state width="1921" height="165" key="GridCell.Tab.2.bottom" timestamp="1584084357795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -371,14 +415,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="896" y="202" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584408713620" />
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584511912579">
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584514226380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584511912579" />
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584064809325">
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584514226380" />
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584582135601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584064809325" />
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584582135601" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584408565370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
