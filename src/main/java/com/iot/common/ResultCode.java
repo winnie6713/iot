@@ -13,6 +13,8 @@ public enum ResultCode {
 
     INVALID_PARAMS("101", "参数不正确"),
 
+    UNAUTHENTICATED("102","未授权"),
+
     SQL_ERROR("SQL01", "数据库操作失败"),
 
     INVALID_GRANT("901", "用户名或密码错误"),
@@ -38,6 +40,7 @@ public enum ResultCode {
     USER_EXPIRED("911", "用户已过期"),
 
     REMOTE_ERROR("998", "远程服务调用失败"),
+    TOKEN_INVALID("1001","无效TOKEN"),
 
     SYSTEM_ERROR("999", "系统繁忙，请稍后再试");
 
