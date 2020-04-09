@@ -43,7 +43,7 @@ public class UserController {
                 return Result.failure(ResultCode.INVALID_PARAMS,error.getDefaultMessage());
             }
         }
-        return Result.success(userService.login(loginInfoVO));
+        return userService.login(loginInfoVO);
     }
 
 
