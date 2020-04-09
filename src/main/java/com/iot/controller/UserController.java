@@ -6,14 +6,12 @@ import com.iot.entity.User;
 import com.iot.service.UserService;
 import com.iot.vo.LoginInfoVO;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author: weiyunyun
@@ -46,5 +44,12 @@ public class UserController {
             }
         }
         return Result.success(userService.login(loginInfoVO));
+    }
+
+
+    @GetMapping("logout")
+    public Result logout(){
+        SecurityUtils.getSubject().logout();
+        return Result.success();
     }
 }
