@@ -27,6 +27,11 @@ spring:
     password: admin
     database: test_iot
 
+#elasticsearch配置
+es:
+  host: 120.24.188.42
+  port: 9200
+  scheme: http
 # mybatis_config
 mybatis-plus:
   mapper-locations: classpath*:mapping/*Mapper.xml

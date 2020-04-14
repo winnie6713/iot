@@ -119,7 +119,7 @@ public class ShiroConfig {
         Map<String, Filter> filter = new HashMap<>(1);
         filter.put("jwt", new AccessHandlerFilter());
         bean.setFilters(filter);
-        filterMap.put("/**", "jwt");
+//        filterMap.put("/**", "jwt");
 
         bean.setFilterChainDefinitionMap(filterMap);
         return bean;
