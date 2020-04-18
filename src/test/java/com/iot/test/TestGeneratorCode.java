@@ -26,7 +26,7 @@ public class TestGeneratorCode {
                 .setBaseColumnList(true) //XML标签
                 .setFileOverride(true) //文件覆盖设置
                 .setIdType(IdType.AUTO) //主键策略
-                .setOutputDir("E:\\projects\\iot\\src\\main\\java") //生成路径
+                .setOutputDir("E:\\test mybatis") //生成路径
                 .setMapperName("%sMapper")  //%s会自动填充表实体属性
                 .setXmlName("%sMapper")
                 .setServiceName("%sService")
@@ -47,7 +47,7 @@ public class TestGeneratorCode {
                 .setNaming(NamingStrategy.underline_to_camel) //数据库映射到实体：下划线转驼峰
                 .setTablePrefix("t_")
                 .setEntityLombokModel(true)
-                .setInclude("log_info"); //指定生成的表
+                .setInclude("user"); //指定生成的表
 
         //4.包名策略配置
         PackageConfig pConfig = new PackageConfig();

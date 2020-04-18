@@ -47,7 +47,7 @@ public class PasswordRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
 
         CustomizedToken token = (CustomizedToken) authenticationToken;
-        log.info("PasswordRealm"+ token.getUsername()+ "开始身份认证");
+        log.info("PasswordRealm:"+ token.getUsername()+ "开始身份认证");
         // 根据手机号查询用户
         User user = userService.selectUserByUsername(token.getUsername());
         if (user == null) {

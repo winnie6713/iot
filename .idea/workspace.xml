@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/iot/test/TestGeneratorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/repository/EsLoginfoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/service/EsLoginfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/service/impl/EsLoginfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/vo/FullSearchVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/mes-sl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/mes-sl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/mes-sl/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/mes-sl/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/db/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/db/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/mapper/LogInfoMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LogInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LogInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/controller/EsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/controller/EsLoginfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/entity/ElasticEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/entity/EsLogInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/entity/EsLogInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/mapper/ElasticsearchMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/service/BaseElasticService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/util/ElasticUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/vo/ElasticDataVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/vo/QueryVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/shiro/PasswordRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/shiro/PasswordRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/iot/test/TestGeneratorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/iot/test/TestGeneratorCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +51,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,7 +89,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -67,10 +97,11 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/project/generator-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,21 +112,25 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\projects\iot\src\main\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.iot.config.db" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\iot\src\main\java\com\iot" />
       <recent name="E:\projects\iot\src\main\resources" />
       <recent name="E:\projects\iot\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.iot.config" />
+      <recent name="com.iot.shiro" />
+      <recent name="com.iot.util" />
+      <recent name="com.iot.config.db" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\iot\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Application">
@@ -125,6 +160,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomRealm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.iot.shiro.CustomRealm" />
+      <module name="iot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iot.shiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InstallCert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.iot.InstallCert" />
       <module name="iot_demo" />
@@ -136,6 +184,36 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Deploy to Host" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
+      <option name="address" value="120.24.188.42" />
+      <option name="afterCommand" value="sh start.sh" />
+      <option name="alreadyReset" value="true" />
+      <option name="autoOpen" value="false" />
+      <option name="beforeCommand" value="" />
+      <option name="defaultTabIdx" value="0" />
+      <option name="ecsInstance">
+        <EcsInstance>
+          <option name="OSType" />
+          <option name="instanceId" />
+          <option name="instanceName" />
+          <option name="netType" />
+          <option name="privateIps" />
+          <option name="publicIps" />
+          <option name="regionId" />
+          <option name="tags" />
+        </EcsInstance>
+      </option>
+      <option name="hostTagId" value="0" />
+      <option name="location" value="/opt/application" />
+      <option name="pathOrUrl" value="E:\projects\iot\target\iot-1.0-SNAPSHOT.jar" />
+      <option name="tagId" value="0" />
+      <option name="terminalCommand" />
+      <option name="type" value="HOST" />
+      <option name="uploadType" value="MAVEN" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../iot\pom.xml" goal="clean install" />
       </method>
     </configuration>
     <configuration name="TestGeneratorCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -195,6 +273,13 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cardboard" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yiqi.cardboard.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="iot_demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.iot.Application" />
@@ -206,19 +291,25 @@
       <item itemvalue="Application.Application" />
       <item itemvalue="Application.CodeGenerator" />
       <item itemvalue="Application.InstallCert" />
-      <item itemvalue="Maven.mybatis_generator" />
-      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Application.CustomRealm" />
       <item itemvalue="JUnit.TestGeneratorCode.testGen" />
       <item itemvalue="JUnit.TestGeneratorCode" />
+      <item itemvalue="Maven.mybatis_generator" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestGeneratorCode" />
         <item itemvalue="JUnit.TestGeneratorCode.testGen" />
+        <item itemvalue="Application.CustomRealm" />
+        <item itemvalue="JUnit.TestGeneratorCode" />
         <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.InstallCert" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -250,7 +341,16 @@
       <workItem from="1584064809331" duration="5364000" />
       <workItem from="1584090184593" duration="38975000" />
       <workItem from="1584514159807" duration="3177000" />
-      <workItem from="1584581954028" duration="11082000" />
+      <workItem from="1584581954028" duration="14059000" />
+      <workItem from="1585904901785" duration="53452000" />
+      <workItem from="1586418395689" duration="2254000" />
+      <workItem from="1586749521836" duration="11397000" />
+      <workItem from="1586846313723" duration="3016000" />
+      <workItem from="1587010380088" duration="110000" />
+      <workItem from="1587010509402" duration="926000" />
+      <workItem from="1587085970933" duration="453000" />
+      <workItem from="1587086446783" duration="10465000" />
+      <workItem from="1587171199617" duration="14939000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用的信息。">
       <created>1584090301794</created>
@@ -308,11 +408,58 @@
       <option name="project" value="LOCAL" />
       <updated>1584514223371</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加mybatis-plus generator的配置">
+      <created>1584601702893</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584601702893</updated>
+    </task>
+    <task id="LOCAL-00010" summary="添加mybatis-plus generator的配置">
+      <created>1584601762189</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584601762189</updated>
+    </task>
+    <task id="LOCAL-00011" summary="添加用户管理模块">
+      <created>1586400896566</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586400896566</updated>
+    </task>
+    <task id="LOCAL-00012" summary="添加设备管理模块">
+      <created>1586402598029</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586402598029</updated>
+    </task>
+    <task id="LOCAL-00013" summary="删除多余的代码">
+      <created>1586412511122</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586412511123</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除无用的信息。" />
@@ -320,13 +467,21 @@
     <MESSAGE value="添加日志配置文件。" />
     <MESSAGE value="添加mybatis-plus配置" />
     <MESSAGE value="添加mybatis-generator的配置，并添加lombok plugin的class插件。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis-generator的配置，并添加lombok plugin的class插件。" />
+    <MESSAGE value="添加mybatis-plus generator的配置" />
+    <MESSAGE value="添加用户管理模块" />
+    <MESSAGE value="添加设备管理模块" />
+    <MESSAGE value="删除多余的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除多余的代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="663" y="184" width="594" height="672" key="#Application" timestamp="1584433091670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="663" y="184" width="594" height="672" key="#Application/0.0.1920.1040@0.0.1920.1040" timestamp="1584433091670" />
+    <state x="675" y="197" key="#Deploy_to_Host" timestamp="1586420043859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="675" y="197" key="#Deploy_to_Host/0.0.1920.1040@0.0.1920.1040" timestamp="1586420043859" />
     <state x="552" y="181" key="#Notifications" timestamp="1584090814685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -339,58 +494,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="276" y="251" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584410865049" />
-    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser" timestamp="1584588016173">
+    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser" timestamp="1587196484125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584588016173" />
-    <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584426277673">
+    <state x="1192" y="358" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587196484125" />
+    <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586315172679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584426277673" />
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584586694405">
+    <state x="679" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586315172679" />
+    <state x="936" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586308971945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584586694405" />
-    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1584601698262">
+    <state x="936" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586308971945" />
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587181636744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584601698262" />
-    <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1584417080804">
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587181636744" />
+    <state x="572" y="112" key="CommitChangelistDialog2" timestamp="1586855429553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="761" y="342" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584417080804" />
-    <state width="1921" height="256" key="GridCell.Tab.0.bottom" timestamp="1584600127002">
+    <state x="572" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586855429553" />
+    <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1587086824036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127002" />
-    <state width="1921" height="256" key="GridCell.Tab.0.center" timestamp="1584600127001">
+    <state x="761" y="342" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587086824036" />
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587197868500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127001" />
-    <state width="1921" height="256" key="GridCell.Tab.0.left" timestamp="1584600127001">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587197868500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127001" />
-    <state width="1921" height="256" key="GridCell.Tab.0.right" timestamp="1584600127002">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587197868500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584600127002" />
-    <state width="1921" height="256" key="GridCell.Tab.1.bottom" timestamp="1584600126811">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587197868500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
-    <state width="1921" height="256" key="GridCell.Tab.1.center" timestamp="1584600126811">
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
+    <state width="1877" height="257" key="GridCell.Tab.1.bottom" timestamp="1587197868365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
-    <state width="1921" height="256" key="GridCell.Tab.1.left" timestamp="1584600126811">
+    <state width="1877" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
+    <state width="1877" height="257" key="GridCell.Tab.1.center" timestamp="1587197868365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
-    <state width="1921" height="256" key="GridCell.Tab.1.right" timestamp="1584600126811">
+    <state width="1877" height="257" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
+    <state width="1877" height="257" key="GridCell.Tab.1.left" timestamp="1587197868365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="256" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584600126811" />
+    <state width="1877" height="257" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
+    <state width="1877" height="257" key="GridCell.Tab.1.right" timestamp="1587197868365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="257" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
     <state width="1921" height="165" key="GridCell.Tab.2.bottom" timestamp="1584084357795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -407,22 +566,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="165" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584084357794" />
-    <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1584417013898">
+    <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1586241113694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584417013898" />
-    <state x="896" y="202" key="SettingsEditor" timestamp="1584408713620">
+    <state x="490" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586241113694" />
+    <state x="1040" y="321" key="NewModule_or_Project.wizard" timestamp="1584756182470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="896" y="202" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584408713620" />
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584601706212">
+    <state x="1040" y="321" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1584756182470" />
+    <state x="619" y="128" key="SettingsEditor" timestamp="1587110658070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584601706212" />
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584582135601">
+    <state x="619" y="128" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587110658070" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586855436958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584582135601" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586855436958" />
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586849978873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586849978873" />
+    <state x="661" y="121" width="598" height="798" key="find.popup" timestamp="1587107884810">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="121" width="598" height="798" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587107884810" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584408565370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -435,6 +602,36 @@
           <url>jar://$MAVEN_REPOSITORY$/org/influxdb/influxdb-java/2.8/influxdb-java-2.8.jar!/org/influxdb/dto/BatchPoints.class</url>
           <line>157</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iot/shiro/AccessHandlerFilter.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iot/shiro/AccessHandlerFilter.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/devtool/apache-maven-3.5.0/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/realm/AuthenticatingRealm.class</url>
+          <line>214</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iot/service/impl/UserServiceImpl.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iot/service/impl/UserServiceImpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iot/shiro/PasswordRealm.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
