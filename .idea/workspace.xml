@@ -19,28 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/repository/EsLoginfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/service/EsLoginfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/service/impl/EsLoginfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/vo/FullSearchVo.java" afterDir="false" />
+    <list default="true" id="79dac390-d89a-4b60-8e75-ccef298a7c32" name="Default Changelist" comment="添加es模块。">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/controller/IotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/service/impl/RestTemplateToInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iot/vo/UserInfoVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../project/mes-sl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/mes-sl/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../project/mes-sl/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/mes-sl/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/controller/EsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/controller/EsLoginfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/entity/ElasticEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/entity/EsLogInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/elasticsearch/entity/EsLogInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/mapper/ElasticsearchMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/service/BaseElasticService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/util/ElasticUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/vo/ElasticDataVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/es/vo/QueryVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/shiro/PasswordRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/shiro/PasswordRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/common/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/common/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/common/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/config/rabbitmq/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/controller/MQController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/entity/LogInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iot/vo/LogInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iot/vo/LogInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/V1.00__iot.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/V1.00__iot.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/iot/test/TestGeneratorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/iot/test/TestGeneratorCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -350,7 +346,10 @@
       <workItem from="1587010509402" duration="926000" />
       <workItem from="1587085970933" duration="453000" />
       <workItem from="1587086446783" duration="10465000" />
-      <workItem from="1587171199617" duration="14939000" />
+      <workItem from="1587171199617" duration="18228000" />
+      <workItem from="1587344877850" duration="23559000" />
+      <workItem from="1588727447392" duration="3670000" />
+      <workItem from="1588736828877" duration="9494000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用的信息。">
       <created>1584090301794</created>
@@ -443,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586412511123</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="添加es模块。">
+      <created>1587197945860</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587197945860</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +477,8 @@
     <MESSAGE value="添加用户管理模块" />
     <MESSAGE value="添加设备管理模块" />
     <MESSAGE value="删除多余的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除多余的代码" />
+    <MESSAGE value="添加es模块。" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加es模块。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="663" y="184" width="594" height="672" key="#Application" timestamp="1584433091670">
@@ -482,10 +489,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="197" key="#Deploy_to_Host/0.0.1920.1040@0.0.1920.1040" timestamp="1586420043859" />
-    <state x="552" y="181" key="#Notifications" timestamp="1584090814685">
+    <state x="552" y="181" key="#Notifications" timestamp="1587198218155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="181" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1584090814685" />
+    <state x="552" y="181" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587198218155" />
     <state x="552" y="181" key="#Project_Structure" timestamp="1584090263255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -518,38 +525,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="342" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587086824036" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587197868500">
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1588816175968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587197868500">
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175968" />
+    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1588816175968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587197868500">
+    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175968" />
+    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1588816175968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587197868500">
+    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175968" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1588816175968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868500" />
-    <state width="1877" height="257" key="GridCell.Tab.1.bottom" timestamp="1587197868365">
+    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175968" />
+    <state width="1877" height="242" key="GridCell.Tab.1.bottom" timestamp="1588816175863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
-    <state width="1877" height="257" key="GridCell.Tab.1.center" timestamp="1587197868365">
+    <state width="1877" height="242" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175863" />
+    <state width="1877" height="242" key="GridCell.Tab.1.center" timestamp="1588816175863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
-    <state width="1877" height="257" key="GridCell.Tab.1.left" timestamp="1587197868365">
+    <state width="1877" height="242" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175863" />
+    <state width="1877" height="242" key="GridCell.Tab.1.left" timestamp="1588816175863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
-    <state width="1877" height="257" key="GridCell.Tab.1.right" timestamp="1587197868365">
+    <state width="1877" height="242" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175863" />
+    <state width="1877" height="242" key="GridCell.Tab.1.right" timestamp="1588816175863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587197868365" />
+    <state width="1877" height="242" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588816175863" />
     <state width="1921" height="165" key="GridCell.Tab.2.bottom" timestamp="1584084357795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -578,10 +585,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="128" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587110658070" />
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586855436958">
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587197983063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586855436958" />
+    <state x="956" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587197983063" />
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586849978873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -590,10 +597,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="121" width="598" height="798" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587107884810" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584408565370">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588814410747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584408565370" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588814410747" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

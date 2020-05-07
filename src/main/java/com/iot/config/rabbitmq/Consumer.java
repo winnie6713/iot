@@ -50,13 +50,12 @@ public class Consumer {
     private void sendToMysql(String body) throws ParseException {
         JSONObject jsonObject = JSON.parseObject(body);
         String message = jsonObject.getString("message");
-        String logtime = jsonObject.getString("logtime");
-        String level = jsonObject.getString("level");
-        LocalDateTime timer = LocalDateTime.parse(logtime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        int type = jsonObject.getInteger("type");
+        String deviceCode = jsonObject.getString("deviceCode");
         LogInfo logInfoDo = new LogInfo();
-        logInfoDo.setLevel(level);
+        logInfoDo.setType(type);
         logInfoDo.setMsg(message);
-        logInfoDo.setLogtime(timer);
+        logInfoDo.setDeviceCode(deviceCode);
         logInfoMapper.insert(logInfoDo);
         log.info("data is send to mysql");
     }

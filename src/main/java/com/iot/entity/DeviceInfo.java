@@ -15,37 +15,36 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author weiyunyun
- * @since 2020-03-19
+ * @since 2020-05-06
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class LogInfo extends Model<LogInfo> {
+public class DeviceInfo extends Model<DeviceInfo> {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    private Integer id;
+
+    /**
+     * 设备编号
+     */
+    private String deviceCode;
+
+    /**
+     * 设备对应地址
+     */
+    private String address;
 
     private LocalDateTime createTime;
 
     private LocalDateTime updateTime;
 
     /**
-     * 日志警告级别
+     * 设备名称
      */
-    private Integer type;
-
-    /**
-     * 日志详细信息
-     */
-    private String msg;
-
-    /**
-     * 设备编码
-     */
-    private String deviceCode;
-
+    private String deviceName;
 
 
     @Override

@@ -32,3 +32,14 @@ CREATE TABLE `user` (
                         `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                         PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+
+CREATE TABLE `device_info` (
+                               `id` int(11) NOT NULL AUTO_INCREMENT,
+                               `device_code` varchar(255) COLLATE utf8mb4_bin NOT NULL COMMENT '设备编号',
+                               `address` varchar(255) COLLATE utf8mb4_bin NOT NULL COMMENT '设备对应地址',
+                               `create_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                               `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                               `device_name` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '设备名称',
+                               PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;

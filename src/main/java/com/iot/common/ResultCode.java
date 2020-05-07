@@ -15,6 +15,8 @@ public enum ResultCode {
 
     UNAUTHENTICATED("102","未授权"),
 
+    DEVICE_NOT_EXIST("103","设备不存在"),
+
     SQL_ERROR("SQL01", "数据库操作失败"),
 
     INVALID_GRANT("901", "用户名或密码错误"),

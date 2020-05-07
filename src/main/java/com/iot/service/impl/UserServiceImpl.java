@@ -66,7 +66,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         String hashPassword = ShiroMd5Util.encodeMd5(user.getUsername(),user.getPassword());
         user.setPassword(hashPassword);
         save(user);
-        return Result.success(user);
+        return Result.success();
     }
 
     /**
@@ -80,7 +80,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         // 生成jwtToken
         String jwtToken = JWTUtil.createToken(username, user.getPassword());
         // token
-        data.put("jwtToken", jwtToken);
+        data.put("token", jwtToken);
         return data;
     }
 }

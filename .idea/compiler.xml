@@ -7,9 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
-        <module name="iot_demo" />
         <module name="iot" />
+        <module name="iot_demo" />
+        <module name="demo" />
         <module name="cardboard" />
       </profile>
     </annotationProcessing>

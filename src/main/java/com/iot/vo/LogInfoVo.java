@@ -11,8 +11,17 @@ import java.io.Serializable;
  */
 @Data
 public class LogInfoVo implements Serializable {
-    private String logtime;
-    private String level;
+    /**
+     * 日志信息
+     */
     private String message;
+    /**
+     * 数据类型
+     */
+    private Integer type;
+    /**
+     * 设备编码
+     */
+    private String deviceCode;
 
 }

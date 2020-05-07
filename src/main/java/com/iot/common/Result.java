@@ -23,6 +23,10 @@ public class Result<T> {
         this.msg = resultCode.getMsg();
     }
 
+    private Result(String msg){
+        this.msg = msg;
+    }
+
     public static Result success() {
         return new Result(ResultCode.SUCCESS);
     }
@@ -35,6 +39,10 @@ public class Result<T> {
 
     public static Result failure(ResultCode resultCode) {
         return new Result(resultCode);
+    }
+
+    public static Result failure(String paramMsg){
+        return new Result(paramMsg);
     }
 
     public static Result<String> failure(ResultCode resultCode, String paramMsg) {
