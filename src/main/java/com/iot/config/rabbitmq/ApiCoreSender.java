@@ -17,14 +17,9 @@ public class ApiCoreSender {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    public void sendStrMsg(LogInfoVo logInfoVo){
-        log.info("api.core.user send message :{} ",logInfoVo);
-        rabbitTemplate.convertAndSend("coreExchange", "api.core.user", logInfoVo);
-    }
-
-    public void sendByteMsg(byte[] msg){
-        log.info("api.core.user send message :{} ",msg);
-        rabbitTemplate.convertAndSend("coreExchange", "api.core.user", msg);
+    public void sendStrMsg(String message){
+        log.info("api.core.user send message :{} ",message);
+        rabbitTemplate.convertAndSend("coreExchange", "api.core.user", message);
     }
 
 }

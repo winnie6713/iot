@@ -47,7 +47,7 @@ public class IotController {
         }
         String message = logInfoVo.getMessage();
         log.info("message is {}",message);
-        coreSender.sendStrMsg(logInfoVo);
+        coreSender.sendStrMsg(message);
         return Result.success();
     }
 
